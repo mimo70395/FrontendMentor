@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 21rem 21rem;
+  box-shadow: 5px 5px 30px #dfdffc;
+  border-radius: 1.6rem;
+}
+
+.results-container {
+  background: linear-gradient(0deg, #3d30ed, #7b5dff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1.6rem;
+  padding: 2.4rem 0;
+}
+
+.result-title {
+  font-size: 1.2rem;
+  color: #ffffffb9;
+  margin-bottom: 1rem;
+}
+
+.result-circle {
+  background: linear-gradient(180deg, #0000003c, #0000000d);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.score {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.max-score {
+  color: #ffffff6b;
+}
+
+.bottom-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.small-paragraph {
+  text-align: center;
+  width: 65%;
+  color: #fff;
+}
+
+.summary-container {
+  background-color: #fff;
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+}
+
+.summary-title {
+  font-size: 1.2rem;
+  color: #303b59;
+  margin-bottom: 1rem;
+}
+
+.sm-container {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.6rem;
+  width: 17rem;
+}
+
+.sm-container .left {
+  display: flex;
+  align-items: center;
+}
+
+.sm-container .left svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.t-red {
+  color: #f55;
+  background-color: rgba(255, 85, 85, 0.1);
+}
+
+.t-yellow {
+  color: #ffb21e;
+  background-color: #ffb01e20;
+}
+
+.t-green {
+  color: #00bb8f;
+  background-color: #00bb8f20;
+}
+
+.t-blue {
+  color: #1125d6;
+  background-color: #1125d620;
+}
+
+.categorie {
+  font-weight: bold;
+}
+
+.right .parciel-score {
+  color: #b1b1b1;
+  font-weight: bold;
+}
+
+.right .parciel-score span {
+  color: #303b59;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #303b59;
+  width: 17rem;
+  height: 3.6rem;
+  border: none;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3d30ed;
+}
+
+/*
+media query
+*/
+
+@media screen and (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 30px #dfdffc;
+    border-radius: 1rem;
+  }
+  .small-paragraph {
+    width: 75%;
+  }
+  .sm-container {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+}
